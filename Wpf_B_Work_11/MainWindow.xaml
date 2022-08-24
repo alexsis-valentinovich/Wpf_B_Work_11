@@ -1,0 +1,63 @@
+﻿<Window x:Class="Wpf_B_Work_11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_B_Work_11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <!--<EllipseGeometry x:Key="ellipseLittle" Center="125 105" RadiusX="100" RadiusY="100"/>
+        <EllipseGeometry x:Key="ellipseBig" Center="125 105" RadiusX="80" RadiusY="80"/>
+        <RectangleGeometry x:Key="rectMy" Rect="155 -105 20 180"/>-->
+        <Style TargetType="Path">
+            <Setter Property="Fill" Value="Red"/>
+            <Setter Property="Stroke" Value="Black"/>
+        </Style>
+    </Window.Resources>
+
+
+    <UniformGrid Columns="2" Width="Auto">
+        <Grid>
+            <Path>
+                <Path.Data>
+                    <CombinedGeometry>
+                        <CombinedGeometry.Geometry1>
+                            <GeometryGroup>
+                                <EllipseGeometry  Center="125 105" RadiusX="100" RadiusY="100"/>
+                                <EllipseGeometry  Center="125 105" RadiusX="80" RadiusY="80"/>
+                            </GeometryGroup>
+                        </CombinedGeometry.Geometry1>
+                        <CombinedGeometry.Geometry2>
+                            <RectangleGeometry  Rect="155 -105 20 180">
+                                <RectangleGeometry.Transform>
+                                    <RotateTransform Angle="45"/>
+                                </RectangleGeometry.Transform>
+                            </RectangleGeometry>
+                        </CombinedGeometry.Geometry2>
+                    </CombinedGeometry>
+                </Path.Data>
+            </Path>
+
+        </Grid>
+        <Grid>
+
+            <Path Data="M220,185.37333 C220,185.37333 198.16667,147.91334 237.5,144.58 276.83333,141.24667 273.6322,112.94693 282.78787,154.73522 291.94354,196.52352 235.09781,193.79404 235.09781,193.79404" Fill="#FFD9D9F6" HorizontalAlignment="Left" Height="64" Margin="214,131,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="72"/>
+            <Path Data="M240,202.04 C240,202.04 308.16667,178.24666 318.83333,206.91333 329.5,235.57999 349.93426,240.4513 314.01021,255.93762 278.08615,271.42393 234.86866,220.71953 234.86866,220.71953" Fill="#FFD9D9F6" HorizontalAlignment="Left" Height="67" Margin="235,193,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="101"/>
+            <Path Data="M212.66667,185.37333 C208,184.04 199.16667,121.91334 146.50001,139.91334 93.833338,157.91334 98.211697,169.99864 107.5686,186.57335 116.9255,203.14805 203.84375,206.75159 203.84375,206.75159" Fill="#FFD9D9F6" HorizontalAlignment="Left" Height="71" Margin="102,136,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="112"/>
+            <Path Data="M200.66667,214.04 C200.66667,214.04 109.83334,200.24666 105.83334,228.24666 101.83334,256.24666 84.038306,268.54658 125.29913,279.63052 166.55995,290.71447 206.50453,229.95285 206.50453,229.95285" Fill="#FFD9D9F6" HorizontalAlignment="Left" Height="73" Margin="99,211,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="109"/>
+            <Path Data="M234.66667,228.04 C234.66667,228.04 317.16667,272.91333 310.50001,292.24666 303.83334,311.57999 294.67058,328.57027 261.91078,316.53151 229.15099,304.49276 221.12819,238.30394 221.12819,238.30394" Fill="#FFD9D9F6" HorizontalAlignment="Left" Height="93" Margin="222,228,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="90"/>
+            <Path Data="M220,221.04 C220,221.04 176.70544,284.08168 182.03878,302.74835 187.37211,321.41501 210.96873,338.30541 185.35282,370.25658 159.7369,402.20774 157.47694,414.55447 157.47694,414.55447" Fill="{x:Null}" HorizontalAlignment="Left" Height="195" Margin="158,221,0,0" Stroke="#FF28A219" Stretch="Fill" VerticalAlignment="Top" Width="63" StrokeThickness="6"/>
+            <Path Data="M197.69881,332.05593 C197.69881,332.05593 215.16666,313.91334 213.83333,303.24668 212.49999,292.58001 222.47899,278.9811 222.47899,278.9811 222.47899,278.9811 235.13435,299.21158 228.08579,307.221 221.03724,315.23043 217.22186,321.90495 208.87637,328.57947 200.53088,335.25399 197.69881,332.05593 197.69881,332.05593 z" Fill="#FFC5EAA6" HorizontalAlignment="Left" Height="55" Margin="198,279,0,0" Stroke="#FF28A219" Stretch="Fill" VerticalAlignment="Top" Width="34" StrokeThickness="3"/>
+            <Path Data="M188.65052,358.0614 C188.65052,358.0614 176.83333,365.57999 172.16667,330.91332 167.5,296.24665 139.3455,308.13679 139.3455,308.13679 139.3455,308.13679 150.43343,307.74115 144.47574,334.29306 138.51805,360.84497 157.47064,355.98445 161.44244,359.38854 165.41423,362.79264 188.65052,358.0614 188.65052,358.0614 z" Fill="#FFC5EAA6" HorizontalAlignment="Left" Height="56" Margin="139,307,0,0" Stroke="#FF28A219" Stretch="Fill" VerticalAlignment="Top" Width="50" StrokeThickness="3"/>
+            <Ellipse HorizontalAlignment="Left" Height="54" Margin="192,184,0,0" Stroke="Black" VerticalAlignment="Top" Width="58">
+                <Ellipse.Fill>
+                    <RadialGradientBrush GradientOrigin="0.7,0.2">
+                        <GradientStop Color="White" Offset="0.103"/>
+                        <GradientStop Color="#FFA2A20D" Offset="1"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+    </UniformGrid>
+</Window>
